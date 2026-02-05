@@ -1,0 +1,10 @@
+---
+title: "Exploratory Data Analysis Challenge"
+author: "Maya Eldani"
+format: html
+---
+
+```{r}
+library(tidyverse)
+
+d <- read_csv("https://raw.githubusercontent.com/difiore/ada-datasets/main/data-wrangling.csv")
