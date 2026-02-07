@@ -8,3 +8,18 @@ format: html
 library(tidyverse)
 
 d <- read_csv("https://raw.githubusercontent.com/difiore/ada-datasets/main/data-wrangling.csv")
+
+names(d)
+
+s <- select(d, 1:3)
+
+ggplot(d, aes(x = d[[1]], y = d[[2]])) +
+  geom_point()
+```
+head(s)
+s <- select(d, 1:3)
+ggplot(d, aes(x = d[[1]], y = d[[2]])) +
+  geom_point() +
+  labs(x = "First variable",
+       y = "Second variable",
+       title = "Scatter plot of first two columns")
